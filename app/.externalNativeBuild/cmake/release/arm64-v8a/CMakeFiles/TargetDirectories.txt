@@ -1,0 +1,4 @@
+/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir
+/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native_app_glue.dir

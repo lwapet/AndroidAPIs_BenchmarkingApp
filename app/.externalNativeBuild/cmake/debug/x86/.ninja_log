@@ -1,0 +1,5 @@
+# ninja log v5
+0	49	0	CMakeFiles/native_app_glue.dir/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/sources/android/native_app_glue/android_native_app_glue.c.o	d67b911abc430a93
+49	64	0	libnative_app_glue.a	e7793263859dc7ed
+64	293	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	56ad06f8d7663846
+293	353	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	233a918faac67a3a

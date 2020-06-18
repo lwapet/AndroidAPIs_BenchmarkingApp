@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scroll view : the screen will automatically scroll if they are more widget than it can contains-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".BeningAPIsBenchmarkingActivity"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:showIn="@layout/activity_malicious_apis_benchmarking">
+    <!-- Linear layout : to align all api groupBloc vertically-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_javax_sql_ConnectionEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name :javax.sql.ConnectionEvent -> init"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_javax_sql_ConnectionEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_javax_sql_ConnectionEvent"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_javax_sql_ConnectionEvent">
+                <EditText
+                    android:id="@+id/numberOfTest_api_javax_sql_ConnectionEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of tests"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_javax_sql_ConnectionEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_javax_sql_ConnectionEvent"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_java_nio_channels_WritableBytesChannel_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name : java.nio.channels.WritableBytesChannel -> close"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_java_nio_channels_WritableBytesChannel_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_java_nio_channels_WritableBytesChannel_close"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_java_nio_channels_WritableBytesChannel_close">
+                <EditText
+                    android:id="@+id/numberOfTest_api_java_nio_channels_WritableBytesChannel_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of tests"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_java_nio_channels_WritableBytesChannel_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_java_nio_channels_WritableBytesChannel_close"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_android_service_carrier_CarrierService_stopSelf_V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name : Landroid.service.carrier.CarrierService.stopSelf:()V "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/name_api_android_service_carrier_CarrierService_stopSelf_V">
+                <Button
+                    android:id="@+id/info_button_api_android_service_carrier_CarrierService_stopSelf_V"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How it works? "
+                    android:layout_centerVertical= "true"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/startTest_api_android_service_carrier_CarrierService_stopSelf_V"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start the test"
+                    android:layout_centerVertical= "true"
+                    android:layout_toRightOf="@+id/info_button_api_android_service_carrier_CarrierService_stopSelf_V"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_Native_Activity_getVolumeControlStream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name : NativeActivity->getVolumeControlStream "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/name_api_Native_Activity_getVolumeControlStream">
+                <Button
+                    android:id="@+id/info_button_api_Native_Activity_getVolumeControlStream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How it works? "
+                    android:layout_centerVertical= "true"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/startTest_api_Native_Activity_getVolumeControlStream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start the test"
+                    android:layout_centerVertical= "true"
+                    android:layout_toRightOf="@+id/info_button_api_Native_Activity_getVolumeControlStream"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_adapterView_refreshDrawableState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name : adapterView->refreshDrawableState()"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <RelativeLayout
+                android:id="@+id/groupBox1_adapterView_refreshDrawableState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/name_api_adapterView_refreshDrawableState">
+                <Button
+                    android:id="@+id/info_button_api_adapterView_refreshDrawableState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How it works? "
+                    android:layout_centerVertical= "true"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/refresh_adapterView_refreshDrawableState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="refresh the adapter view"
+                    android:layout_centerVertical= "true"
+                    android:layout_toRightOf="@+id/info_button_api_adapterView_refreshDrawableState"
+                    android:textAllCaps="false"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/groupBox2_adapterView_refreshDrawableState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/groupBox1_adapterView_refreshDrawableState">
+                <Button
+                    android:id="@+id/startTest_api_adapterView_refreshDrawableState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start the test"
+                    android:layout_centerVertical= "true"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/groupBox2_adapterView_refreshDrawableState">
+
+                <ListView
+                    android:id="@+id/adapter_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="145dp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+        <!-- Relative Layout about the test process-->
+
+
+
+        <!--info_button_api_android_service_carrier_CarrierService_stopSelf-->
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

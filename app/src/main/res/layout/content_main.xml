@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lavoisier.AndroidAPIs_BenchmarkingApp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/start_benign_apis_benchmarking_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startAnotherActivity"
+        android:text="test benign APIs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/start_malicious_apis_benchmarking_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startAnotherActivity"
+        android:text="test malicious APIs"
+        app:layout_constraintTop_toBottomOf="@+id/start_benign_apis_benchmarking_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/test_activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="startAnotherActivity"
+        android:text="test activity"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility = "gone"
+       />
+
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:hint="enter something"
+        android:visibility = "gone"/>
+
+    <Button
+        android:id="@+id/test_jni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Test Jni Call"
+        android:visibility = "gone"/>
+
+    <Button
+        android:id="@+id/test_adapter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="test adapter view (List view below)"
+        android:visibility = "gone"/>
+
+    <ListView
+        android:id="@+id/adapter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="320dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:visibility = "gone"/>
+
+    <Button
+        android:id="@+id/test_opengl_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="test opengl matrix"
+        android:visibility = "gone"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:text="MultiAutoCompleteTextView"
+        android:visibility = "gone"/>
+
+
+    <!--<TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />-->
+
+
+</android.support.constraint.ConstraintLayout>

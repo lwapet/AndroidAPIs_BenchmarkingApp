@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scroll view : the screen will automatically scroll if they are more widget than it can contains-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".BeningAPIsBenchmarkingActivity"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:showIn="@layout/activity_bening_apis_benchmarking">
+    <!-- Linear layout : to align all api groupBloc vertically-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_XXX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name : java.lang.Object->toString() "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_java_lang_Object_toString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_XXX"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_java_lang_Object_toString">
+                <EditText
+                    android:id="@+id/numberOfTest_api_java_lang_Object_toString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of times"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_java_lang_Object_toString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_java_lang_Object_toString"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_java_lang_stringBuilder_appendS_appendI_toString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name :  java.lang.StringBuilder -> method ----------------append(String) append (Int) , toString() "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_java_lang_stringBuilder_appendS_appendI_toString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_java_lang_stringBuilder_appendS_appendI_toString"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_java_lang_stringBuilder_appendS_appendI_toString">
+                <EditText
+                    android:id="@+id/numberOfTest_api_java_lang_stringBuilder_appendS_appendI_toString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of tests"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_java_lang_stringBuilder_appendS_appendI_toString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_java_lang_stringBuilder_appendS_appendI_toString"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_java_lang_string_method_equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name :  java.lang.string -> equals "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_java_lang_string_method_equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_java_lang_string_method_equal"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_java_lang_string_method_equal">
+                <EditText
+                    android:id="@+id/numberOfTest_api_java_lang_string_method_equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of tests"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_java_lang_string_method_equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_java_lang_string_method_equal"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- RelativeLayout to add a specific APIs benchmarking tool, infoButton, NumberOfOccurences textField, Button to start the Test-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border">
+            <!-- TestView for the API name-->
+            <TextView
+                android:id="@+id/name_api_java_util_arrayList_Iterator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:text="API name :   java.util.ArrayList -> init() and java.util.Iterator -> next() , hasNext() "
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <!-- TestView for the API info, about how to test-->
+            <Button
+                android:id="@+id/info_button_api_java_util_arrayList_Iterator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_api_java_util_arrayList_Iterator"
+                android:layout_centerHorizontal="true"
+                android:text="How it works? "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"/>
+            <!-- Relative Layout about the test process-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_button_api_java_util_arrayList_Iterator">
+                <EditText
+                    android:id="@+id/numberOfTest_api_java_util_arrayList_Iterator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="number of tests"
+                    android:textAllCaps="false"
+                    android:inputType="numberSigned" />
+                <Button
+                    android:id="@+id/startTest_api_java_util_arrayList_Iterator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/numberOfTest_api_java_util_arrayList_Iterator"
+                    android:text="Start the test"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/cmake/3.6.4111459/bin/cmake --build /home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/cmake/3.6.4111459/bin/cmake --build /home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dnative_lib_EXPORTS -I/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/sources/android/native_app_glue  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "2863218793222586677"
+		},
+		"native_app_glue-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native_app_glue",
+			"buildCommand" : "/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/cmake/3.6.4111459/bin/cmake --build /home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a --target native_app_glue",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -I/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/sources/android/native_app_glue  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC      -c ",
+					"src" : "/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/sources/android/native_app_glue/android_native_app_glue.c",
+					"workingDirectory" : "/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/lavoisier/svn_workspace/wapet/security/apks/AndroidAPIs_BenchmarkingApp/app/.externalNativeBuild/cmake/release/armeabi-v7a/libnative_app_glue.a",
+			"toolchain" : "2863218793222586677"
+		}
+	},
+	"toolchains" : 
+	{
+		"2863218793222586677" : 
+		{
+			"cCompilerExecutable" : "/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/lavoisier/svn_workspace/wapet/security/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
